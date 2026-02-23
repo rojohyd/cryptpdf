@@ -20,7 +20,8 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "node test/test.mjs"
+    "test": "node test/test.mjs",
+    "prepublishOnly": "npm run build && npm test"
   },
   "peerDependencies": {
     "pdf-lib": "^1.17.1"
