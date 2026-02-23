@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test/output/
+*.tsbuildinfo
+.DS_Store
+.specstory/
+.cursorindexingignore

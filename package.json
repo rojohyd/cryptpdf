@@ -1,0 +1,45 @@
+{
+  "name": "cryptpdf",
+  "version": "0.1.0",
+  "description": "Minimal PDF encrypt/decrypt with AES-256 (PDF Rev 5). Buffer in, buffer out.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "node test/test.mjs"
+  },
+  "peerDependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "pdf",
+    "encryption",
+    "decryption",
+    "aes-256",
+    "password",
+    "pdf-lib"
+  ],
+  "license": "MIT"
+}
